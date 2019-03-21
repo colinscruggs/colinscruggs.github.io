@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colin Scruggs | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Hero landing -->
+  <section class="hero is-fullheight is-light is-bold">
+
+    <!-- Hero > Navbar-->
+    <div class="hero-head">
+
+      <header class="navbar is-fixed-top">
+        <div class="container">
+          <div class="navbar-brand logo">
+
+            <span class="navbar-burger burger" data-target="navbarMenuHeroC" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </span>
+          </div>
+
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" id="aboutButton">
+                About
+              </a>
+              <a class="navbar-item" id="skillsButton">
+                Skills
+              </a>
+              <a class="navbar-item" id="projectsButton">
+                Projects
+              </a>
+              <a class="navbar-item" id="musicButton">
+                Music
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+
+    <!-- Hero > Content -->
+    <div class="hero-body container has-text">
+
+      <!-- Title column-->
+      <div class="columns is-centered">
+        <div class="column is-two-thirds-desktop is-full-mobile hero-title">
+          <h1 class="title has-text-justified-mobile hero-title">
+            Colin Scruggs
+          </h1>
+          <!-- </div> -->
+          <!-- Bio column
+        <div class="column is-one-third-desktop is-full-mobile has-text-justified-mobile hero-bio"> -->
+          <p class="subtitle is-size-4-tablet is-size-7-mobile-only ">
+            Hello! I'm a soon-to-be graduate of <strong>Southwestern University</strong> with a bachelor's degree in
+            Computer Science.
+            My interests include front-end development, data visualization, graphic design, and audio engineering.
+          </p>
+        </div>
+        <!-- Avatar column -->
+        <div class="column is-one-third-desktop is-full-mobile is-flex is-horizontal-center is-centered hero-prof">
+          <figure class="image" id="profile">
+            <img class="is-rounded is-1by1" src="media/profile_pic.jpg">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section class="section" id="skills">
+    <div class="columns">
+
+      <div class="column">
+        <h1 class="title title-2 has-text-centered is-full">skills //</h1>
+
+        <div class="columns">
+          <div class="column">
+            <h2 class="title is-size-2 has-text-centered "> Software and Front-End Development</h2>
+            <div class="buttons">
+              <span class="button">Java</span>
+              <span class="button">JavaScript</span>
+              <span class="button">Python</span>
+              <span class="button">Vue.js</span>
+              <span class="button">C++</span>
+              <span class="button">jQuery</span>
+              <span class="button">MySQL</span>
+              <span class="button">Django</span>
+              <span class="button">HTML</span>
+              <span class="button">CSS</span>
+              <span class="button">Git version control</span>
+              <span class="button">bash shell</span>
+              <span class="button">npm</span>
+            </div>
+          </div>
+          <div class="column">
+            <h2 class="title is-size-2 has-text-centered "> Computer Aided Design </h2>
+            <div class="buttons">
+              <span class="button">Adobe Photoshop</span>
+              <span class="button">Adobe Illustrator</span>
+              <span class="button">Adobe Lightroom</span>
+              <span class="button">Tableau</span>
+              <span class="button">Sony Vegas Pro 12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="section" id="projects">
+    <h1 class="title title-2 has-text-centered is-full">projects //</h1>
+
+  </section>
+
+  <section class="section" id="music">
+    <h1 class="title title-2 has-text-centered is-full">music //</h1>
+
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Created by by <a href="https://github.com/colinscruggs">Colin Scruggs</a>.
+      </p>
+      <p>2019</p>
+    </div>
+  </footer>
+
+</body>
+
+<script>
+  // Code used from Bulma documentation:
+  // https://bulma.io/documentation/components/navbar/#fixed-navbar
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+    $("#button").click(function () {
+      $('html, body').animate({
+        scrollTop: $("#skills").offset().top
+      }, 2000);
+    });
+
+  });
+</script>
+
+</html>

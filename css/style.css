@@ -1,0 +1,79 @@
+html {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	margin: 0;
+	font-size: 1.15rem;
+	line-height: 1.4em;
+}
+
+.title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.title-2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+	font-size: 3.75rem;
+	padding: 0 0 10px 0;
+}
+
+.subtitle {
+	font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.hero {
+	color: white;
+}
+
+#profile {
+	max-width: 300px;
+}
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+#navbar {
+	justify-content: center;
+}
+
+.buttons {
+	justify-content: center;
+	margin: 0 100px 0 100px;
+}
+
+@media(max-width: 786px) { /* <== You can change this break point as per your  needs */
+  .hero-title {
+		padding-bottom: 40px;
+    order: 0;
+	}
+
+	.is-active {
+		transition: 0.5s;
+	}
+
+	.logo {
+		padding-left: 25px;
+	}
+	
+	.hero-prof {
+		order: 5;
+	}
+
+	.hero-bio {
+		order: 99;
+	}
+
+	.buttons {
+		margin: 0 50px 0 50px;
+	}
+}
