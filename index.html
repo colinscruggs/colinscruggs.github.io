@@ -10,11 +10,12 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
   <!-- Hero landing -->
-  <section class="hero is-fullheight is-light is-bold">
+  <section class="hero is-fullheight is-light is-bold" id="about">
 
     <!-- Hero > Navbar-->
     <div class="hero-head">
@@ -141,41 +142,5 @@
   </footer>
 
 </body>
-
-<script>
-  // Code used from Bulma documentation:
-  // https://bulma.io/documentation/components/navbar/#fixed-navbar
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach(el => {
-        el.addEventListener('click', () => {
-
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-
-        });
-      });
-    }
-
-    $("#button").click(function () {
-      $('html, body').animate({
-        scrollTop: $("#skills").offset().top
-      }, 2000);
-    });
-
-  });
-</script>
 
 </html>
