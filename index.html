@@ -5,9 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Colin Scruggs | Portfolio</title>
+
+  <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- JavaScript imports-->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
@@ -15,7 +22,7 @@
 
 <body>
   <!-- Hero landing -->
-  <section class="hero is-fullheight is-light is-bold" id="about">
+  <section class="hero is-fullheight is-white" id="about">
 
     <!-- Hero > Navbar-->
     <div class="hero-head">
@@ -23,7 +30,7 @@
       <header class="navbar is-fixed-top">
         <div class="container">
           <div class="navbar-brand logo">
-
+            <!-- Navbar burger (mobile only) -->
             <span class="navbar-burger burger" data-target="navbarMenuHeroC" aria-label="menu" aria-expanded="false">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -32,6 +39,7 @@
             </span>
           </div>
 
+          <!-- Navbar menu -->
           <div id="navbarMenuHeroC" class="navbar-menu">
             <div class="navbar-end">
               <a class="navbar-item" id="aboutButton">
@@ -62,15 +70,52 @@
           <h1 class="title has-text-justified-mobile hero-title">
             Colin Scruggs
           </h1>
+
           <!-- </div> -->
           <!-- Bio column
         <div class="column is-one-third-desktop is-full-mobile has-text-justified-mobile hero-bio"> -->
-          <p class="subtitle is-size-4-tablet is-size-7-mobile-only ">
+          <p class="subtitle is-size-4-tablet is-size-7-mobile-only" id="bio">
             Hello! I'm a soon-to-be graduate of <strong>Southwestern University</strong> with a bachelor's degree in
-            Computer Science.
+            Computer Science. <br> <br>
             My interests include front-end development, data visualization, graphic design, and audio engineering.
           </p>
+          <nav class="level is-mobile">
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Github</p>
+                <span class="icon has-text-grey-dark">
+                  <a href="https://github.com/colinscruggs" target="_blank">
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+
+                <p class="heading">LinkedIn</p>
+                <span class="icon has-text-link">
+                  <a href="https://www.linkedin.com/in/colin-scruggs-51576bbb/" target="_blank">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Spotify</p>
+                <span class="icon has-text-success">
+                  <a href="https://open.spotify.com/artist/2YG5rP9nse6vNOtRmGtPFT" target="_blank">
+                    <i class="fab fa-spotify fa-lg"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </nav>
+
+
         </div>
+
         <!-- Avatar column -->
         <div class="column is-one-third-desktop is-full-mobile is-flex is-horizontal-center is-centered hero-prof">
           <figure class="image" id="profile">
@@ -79,14 +124,20 @@
         </div>
       </div>
     </div>
+
+    <div class="hero-foot">
+        <div class="container is-hidden-mobile">
+            <div class="scroll-down"></div>
+        </div>
+    </div>
   </section>
 
   <!-- Skills section -->
-  <section class="section" id="skills">
+  <section class="section hideme" id="skills">
     <div class="columns">
 
       <div class="column">
-        <h1 class="title title-2 has-text-centered is-full">skills //</h1>
+        <h1 class="title title-2 has-text-centered is-full" id="skillsTitle">skills //</h1>
 
         <div class="columns">
           <div class="column">
@@ -123,12 +174,89 @@
 
   <!-- Projects section -->
   <section class="section" id="projects">
-    <h1 class="title title-2 has-text-centered is-full">projects //</h1>
+    <h1 class="title title-2 has-text-centered is-full" id="projectsTitle">projects //</h1>
+
+  
+
+    <!-- Project cards columns -->
+    <div class="columns is-multiline">
+      <div class="column is-5 is-offset-1"> 
+          <article class="message is-warning">
+              <div class="message-header is-medium">
+                <p>SU Radio</p>
+
+                <span class="icon has-text-white">
+                    <a href="https://surad.io/" target="_blank">
+                      <i class="fas fa-globe-americas fa-lg project-icon"></i>
+                    </a>
+                  <!-- </span>
+                <span class="icon has-text-grey-light"> -->
+                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
+                      <i class="fab fa-github fa-lg project-icon"></i>
+                    </a>
+                  </span>
+              </div>
+
+              <div class="message-body">
+                <h3 class="subtitle">Southwestern King Creativity Project</h3>
+                <figure class="image is-3by2">
+                    <img src="media/suradio.png">
+                  </figure>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              </div>
+        </article>
+      </div>
+
+      <div class="column is-5"> 
+          <article class="message">
+              <div class="message-header">
+                <p>Voluntunity</p>
+
+                <span class="icon has-text-white">
+                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
+                      <i class="fas fa-globe-americas fa-lg project-icon"></i>
+                    </a>
+                  <!-- </span>
+                <span class="icon has-text-grey-light"> -->
+                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
+                      <i class="fab fa-github fa-lg project-icon"></i>
+                    </a>
+                  </span>
+              </div>
+              <div class="message-body">
+                <h3 class="subtitle">Senior Capstone Project</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              </div>
+        </article>
+      </div>
+
+      <div class="column is-5 is-offset-6"> 
+          <article class="message is-info">
+              <div class="message-header">
+                <p>Audio Explorer</p>
+
+                <span class="icon has-text-white">
+                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
+                      <i class="fas fa-globe-americas fa-lg project-icon"></i>
+                    </a>
+                  <!-- </span>
+                <span class="icon has-text-grey-light"> -->
+                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
+                      <i class="fab fa-github fa-lg project-icon"></i>
+                    </a>
+                  </span>
+              </div>
+              <div class="message-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              </div>
+        </article>
+      </div>
+    </div>
 
   </section>
 
   <section class="section" id="music">
-    <h1 class="title title-2 has-text-centered is-full">music //</h1>
+    <h1 class="title title-2 has-text-centered is-full" id="musicTitle">music //</h1>
 
   </section>
 
