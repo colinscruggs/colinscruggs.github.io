@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(pastTop) {
             $('.navbar').removeClass("navTop");
             $('.navbar').addClass("navScroll");
+            $('#page-title').removeClass("hide-scroll")
             if(currY < lastY) {
                 $('.navbar').removeClass("hidden");
                 $('.navbar').addClass("slideDown");   
@@ -86,9 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if(currY === 0) {
             $('.navbar').addClass("hidden");
             $('.navbar').removeClass("slideDown"); 
+            $('#page-title').addClass("hide-scroll")
         } else {
             $('.navbar').removeClass("navScroll");
             $('.navbar').addClass("navTop");  
+
         }
 
         lastY = currY;

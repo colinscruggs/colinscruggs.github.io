@@ -189,8 +189,7 @@ article {
 }
 
 .slideDown {
-	color: black !important;
-	transform: translateY(-55px);
+	transform: translateY(-65px);
 	opacity: 1 !important;
 }
 
@@ -200,11 +199,19 @@ article {
 	overflow: hidden;
 }
 
+.hide-scroll {
+	opacity: 0;
+}
+
 /* Responsive mobile styling */
 
 @media(max-width: 786px) {
 
-	/* <== You can change this break point as per your  needs */
+	.navbar-menu {
+		bottom: 13px;
+    position: relative;
+	}
+
 	.hero-title {
 		padding-bottom: 0px;
 		order: 0;
