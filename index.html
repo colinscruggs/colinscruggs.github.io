@@ -25,7 +25,7 @@
   <section class="hero is-fullheight is-white" id="about">
 
     <!-- Hero > Navbar-->
-    <div class="hero-head">
+    <div class="hero-head" id="navbar">
 
       <header class="navbar is-fixed-top">
         <div class="container">
@@ -126,9 +126,9 @@
     </div>
 
     <div class="hero-foot">
-        <div class="container is-hidden-mobile">
-            <div class="scroll-down"></div>
-        </div>
+      <div class="container is-hidden-mobile">
+        <div class="scroll-down"></div>
+      </div>
     </div>
   </section>
 
@@ -176,80 +176,133 @@
   <section class="section" id="projects">
     <h1 class="title title-2 has-text-centered is-full" id="projectsTitle">projects //</h1>
 
-  
+
 
     <!-- Project cards columns -->
     <div class="columns is-multiline">
-      <div class="column is-5 is-offset-1"> 
-          <article class="message is-warning">
-              <div class="message-header is-medium">
-                <p>SU Radio</p>
+      <!-- Left column -->
+      <div class="column is-5 is-offset-1">
+        <!-- Audio Explorer -->
+        <article class="message is-info">
+          <div class="message-header">
+            <p>Audio Explorer</p>
 
-                <span class="icon has-text-white">
-                    <a href="https://surad.io/" target="_blank">
-                      <i class="fas fa-globe-americas fa-lg project-icon"></i>
-                    </a>
-                  <!-- </span>
+            <span class="icon has-text-white">
+              <a href="https://chadstolper.github.io/vast-challenge-2018-mc1/" target="_blank">
+                <i class="fas fa-globe-americas fa-lg icon-left"></i>
+              </a>
+              <!-- </span>
                 <span class="icon has-text-grey-light"> -->
-                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
-                      <i class="fab fa-github fa-lg project-icon"></i>
-                    </a>
-                  </span>
-              </div>
-
-              <div class="message-body">
-                <h3 class="subtitle">Southwestern King Creativity Project</h3>
-                <figure class="image is-3by2">
-                    <img src="media/suradio.png">
-                  </figure>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-              </div>
+              <a href="https://github.com/chadstolper/vast-challenge-2018-mc1" target="_blank">
+                <i class="fab fa-github fa-lg icon-right"></i>
+              </a>
+            </span>
+          </div>
+          <div class="message-body">
+            <h3 class="subtitle">Winning submission to 2018 VAST Challenge</h3>
+            <figure class="image is-5by3">
+              <img src="media/audioexplorer.png">
+            </figure>
+            <br>
+            Audio Explorer is a data visualization tool created by Colin Scruggs and Cameron Henkel of Southwestern
+            University for the <a href="http://www.vacommunity.org/VAST+Challenge+2018" target="_blank">2018 VAST
+            Challenge.</a> Audio Explorer was the recipient of the "Excellent Comprehensive Submission" Award from the 
+            VAST committee for 2018's Mini Challenge 1, and was deemed the overall winning submission at the IEEE VIS Conference in Berlin,
+            Germany where we delivered a presentation on our approach to research and design. <br><br>
+            Live demo available <a href="https://chadstolper.github.io/vast-challenge-2018-mc1/" target="_blank">here</a>.
+          </div>
         </article>
+
+        <!-- SU Radio -->
+        <article class="message is-warning">
+          <div class="message-header is-medium">
+            <p>SU Radio</p>
+
+            <span class="icon has-text-white">
+              <a href="https://surad.io/" target="_blank">
+                <i class="fas fa-globe-americas fa-lg icon-left"></i>
+              </a>
+              <!-- </span>
+                <span class="icon has-text-grey-light"> -->
+              <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
+                <i class="fab fa-github fa-lg icon-right"></i>
+              </a>
+            </span>
+          </div>
+
+          <div class="message-body">
+            <h3 class="subtitle">Southwestern King Creativity Project</h3>
+            <figure class="image is-3by2">
+              <img src="media/suradio.png">
+            </figure>
+            <br>
+            I developed a steaming homepage for Southwestern University's student-run online radio station, SU Radio.
+            The site was built using the Vue.js front-end framework with the Vuetify material component plugin. 
+            The site was hosted with funding from Southwestern' annual King Creativity Fund, a grant that supports 
+            "innovative and visionary projects" created by students.
+          </div>
+        </article>
+
       </div>
 
-      <div class="column is-5"> 
-          <article class="message">
-              <div class="message-header">
-                <p>Voluntunity</p>
+      <!-- Right column -->
+      <div class="column is-5">
 
-                <span class="icon has-text-white">
-                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
-                      <i class="fas fa-globe-americas fa-lg project-icon"></i>
-                    </a>
-                  <!-- </span>
-                <span class="icon has-text-grey-light"> -->
-                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
-                      <i class="fab fa-github fa-lg project-icon"></i>
-                    </a>
-                  </span>
-              </div>
-              <div class="message-body">
-                <h3 class="subtitle">Senior Capstone Project</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-              </div>
+        <!-- Voluntunity -->
+        <article class="message">
+          <div class="message-header">
+            <p>Voluntunity</p>
+
+            <span class="icon has-text-white">
+              <a href="https://github.com/leg2015/CSCapstone19Volunteers" target="_blank">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </span>
+          </div>
+          <div class="message-body">
+            <h3 class="subtitle">Senior Capstone Project</h3>
+            <!-- <figure class="image is-5by3">
+                <img src="media/voluntunity.png">
+            </figure> -->
+            The Office of Community-Engaged Learning (OCEL) at Southwestern University curates a list of nonprofit 
+            agencies in Williamson County that offer potential volunteer opportunities to students of Southwestern and 
+            the greater Georgetown community. Our Computer Science Capstone in Software Engineering group is creating an online web 
+            application and database for these opportunities. 
+            <br> <br>
+            "Voluntunity" is built on top of a MySQL database using the Django web framework.
+            This site displays opportunities to users interactively, in both tabular and map form. Users can also search 
+            for potential opportunity matches and filter opportunities based on a wide range of characteristics, 
+            including opportunity type and location. This website will improve the user experience for students and community 
+            members interested in connecting with relevant volunteer opportunities and also decrease workload on OCEL staff members who maintain the list.
+          </div>
         </article>
-      </div>
 
-      <div class="column is-5 is-offset-6"> 
-          <article class="message is-info">
-              <div class="message-header">
-                <p>Audio Explorer</p>
-
-                <span class="icon has-text-white">
-                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
-                      <i class="fas fa-globe-americas fa-lg project-icon"></i>
-                    </a>
-                  <!-- </span>
-                <span class="icon has-text-grey-light"> -->
-                    <a href="https://github.com/cameron-henkel/SURadioApp" target="_blank">
-                      <i class="fab fa-github fa-lg project-icon"></i>
-                    </a>
-                  </span>
-              </div>
-              <div class="message-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-              </div>
-        </article>
+        <!-- Science in Sound -->
+        <article class="message">
+            <div class="message-header">
+              <p>Science in Sound</p>
+  
+              <span class="icon has-text-white">
+                <a href="https://people.southwestern.edu/~scruggsc/index.html" target="_blank">
+                  <i class="fas fa-globe-americas fa-lg icon-left"></i>
+                </a>
+                <a href="https://github.com/colinscruggs/science-in-sound" target="_blank">
+                  <i class="fab fa-github fa-lg icon-right"></i>
+                </a>
+              </span>
+            </div>
+            <div class="message-body">
+              <h3 class="subtitle">Interactive, educational website</h3>
+              <figure class="image is-5by3">
+                  <img src="media/scienceinsound.png">
+              </figure>
+              <br>
+              This site was the product of my year-long senior thesis project in high school at TAG Magnet in Dallas, TX. 
+              As my first major web development project, I gained a great deal of foundational experience using HTML, CSS,
+              jQuery for event handling, and utilizing AJAX. I designed the site under guidance of a professional UI designer
+              mentor throughout the year. I also researched and produced all the original educational content throughout the site.
+            </div>
+          </article>
       </div>
     </div>
 

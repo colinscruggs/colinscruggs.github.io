@@ -46,6 +46,14 @@ body {
 	justify-content: center;
 }
 
+.navbar-burger {
+	transition: 0.3 ease-in-out;
+}
+
+.navbarMenuHeroC {
+	transition: 0.3 ease-in-out;
+}
+
 .buttons {
 	justify-content: center;
 	margin: 0 100px 0 100px;
@@ -131,11 +139,6 @@ body {
   100% { transform:translate(0,5px) rotate(45deg); opacity: 0; }
 }
 
-.project-icon {
-	margin: 0 15px 0 0;
-	left: 5px;
-}
-
 article {
 	transition: box-shadow 0.3s ease-in-out;
 }
@@ -158,6 +161,15 @@ article {
 	font-size: 1.5em;
 }
 
+.icon-right {
+	margin-right: 20px;
+}
+
+.icon-left {
+	position: relative;
+	right: 15px;
+}
+
 .navTop {
 	background-color: none;
 	transition: 0.1s ease-in-out;
@@ -174,25 +186,15 @@ article {
 .hide {
 	opacity: 0 !important;
 	transform: translateY(-120px);
-
 }
 
 .slideDown {
+	color: black !important;
 	transform: translateY(-55px);
 	opacity: 1 !important;
 }
 
-/* TODO: Fade-in on scroll
-
-.hideme {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.visible {
-	opacity: 1;
-	transition: opacity 1s;
-} */
+/* Responsive mobile styling */
 
 @media(max-width: 786px) {
 
