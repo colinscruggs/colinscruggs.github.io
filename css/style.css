@@ -194,6 +194,12 @@ article {
 	opacity: 1 !important;
 }
 
+#spotify {
+	height: 300px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
 /* Responsive mobile styling */
 
 @media(max-width: 786px) {
