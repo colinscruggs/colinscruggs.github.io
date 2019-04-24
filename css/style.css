@@ -35,7 +35,7 @@ body {
 }
 
 #profile {
-	max-width: 300px;
+	max-width: 270px;
 }
 
 .is-horizontal-center {
@@ -194,13 +194,51 @@ article {
 }
 
 #spotify {
-	height: 300px;
+	height: 270px;
 	border-radius: 3px;
 	overflow: hidden;
 }
 
 .hide-scroll {
 	opacity: 0;
+}
+
+#heaven-link {
+	height: 80px;
+	width: 320px;
+	border-radius: 15px;
+}
+
+#heaven-text {
+	background: -webkit-linear-gradient(#ff5e62, #89216B);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+#heaven-text-wrapper {
+	/* border-color: #ddd;
+	background-color: #333;
+	width: 320px;
+	margin: auto 0; */
+}
+
+iframe {
+	border-radius: 15px;
+}
+
+.iframe-container {
+
+	overflow: hidden;
+}
+
+#euphoria-pic {
+	padding: 45px;
+	margin-top: 45px;
+}
+
+#desc-text {
+	margin-bottom: 20px;
 }
 
 /* Responsive mobile styling */
@@ -235,5 +273,29 @@ article {
 
 	.buttons {
 		margin: 0 40px 0 40px;
+	}
+
+	.navScroll {
+		background-color: none;
+		transition: 0.1s ease-in-out;
+	}
+
+	#euphoria-pic {
+		padding: 30px;
+		margin-top: 15px;
+	}
+
+	.hidden-mobile {
+		display: none;
+	}
+
+	#heaven-text {
+		font-size: 1.8em;
+		text-align: center;
+	}
+
+	#creation-text {
+		font-size: 1em;
+		font-weight: 500;
 	}
 }

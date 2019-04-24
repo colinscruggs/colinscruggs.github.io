@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $('.navbar').removeClass("navTop");
             $('.navbar').addClass("navScroll");
             $('#page-title').removeClass("hide-scroll")
-            if(currY < lastY) {
+            if(currY > lastY) {
                 $('.navbar').removeClass("hidden");
                 $('.navbar').addClass("slideDown");   
             } else {

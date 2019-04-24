@@ -11,6 +11,8 @@
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -115,7 +117,7 @@
         <!-- Avatar column -->
         <div class="column is-one-third-desktop is-full-mobile is-flex is-horizontal-center is-centered hero-prof">
           <figure class="image" id="profile">
-            <img class="is-rounded is-1by1" src="media/profile_pic.jpg">
+            <img class="is-rounded" src="media/prof_pic.jpg">
           </figure>
         </div>
       </div>
@@ -139,10 +141,34 @@
           <div class="column">
             <h2 class="title is-size-2 has-text-centered "> Software and Front-End Development</h2>
             <div class="buttons">
-              <span class="button">Java</span>
-              <span class="button">JavaScript</span>
-              <span class="button">Python</span>
-              <span class="button">Vue.js</span>
+              <span class="button">
+                <span style="font-size: 14px; color: #f89820; margin-right: 0.4em; padding: 0.05rem">
+                    <i class="fab fa-java"></i>
+                </span>Java
+              </span>
+              
+              <span class="button">
+                  <span style="font-size: 14px; color: #f7df1e; margin-right: 0.4em; padding: 0.05rem">
+                    <i class="fab fa-js-square"></i>
+                  </span>JavaScript
+              </span>
+              <span class="button">
+                  <span style="font-size: 14px; color: #4584b6; margin-right: 0.4em; padding: 0.05rem">
+                    <i class="fab fa-python"></i>
+                  </span>
+              Python</span>
+              <span class="button">
+                  <span style="font-size: 14px; color: #42b883; margin-right: 0.4em; padding: 0.05rem">
+                    <i class="fab fa-vuejs"></i>
+                  </span>
+                   Vue
+                </span>
+              <span class="button">
+                <span style="font-size: 14px; color: #00d8ff; margin-right: 0.4em; padding: 0.05rem">
+                    <i class="fab fa-react"></i>
+                </span>
+              React
+              </span>
               <span class="button">D3.js</span>
               <span class="button">C++</span>
               <span class="button">jQuery</span>
@@ -152,7 +178,12 @@
               <span class="button">CSS</span>
               <span class="button">Bootstrap</span>
               <span class="button">Bulma</span>
-              <span class="button">Git version control</span>
+              <span class="button">
+                <span style="font-size: 14px; color: #333; margin-right: 0.4em; padding: 0.05rem">
+                    <i class="fas fa-code-branch"></i>
+                </span>
+              Git version control
+              </span>
               <span class="button">bash shell</span>
               <span class="button">npm</span>
               <span class="button">AJAX</span>
@@ -161,7 +192,9 @@
           <div class="column">
             <h2 class="title is-size-2 has-text-centered "> Computer Aided Design </h2>
             <div class="buttons">
-              <span class="button">Adobe Photoshop</span>
+              <span class="button">
+              Adobe Photoshop
+              </span>
               <span class="button">Adobe Illustrator</span>
               <span class="button">Adobe Lightroom</span>
               <span class="button">Tableau</span>
@@ -316,18 +349,22 @@
     <div class="columns has-text-centered">
       <div class="column is-5 is-full-mobile">
         <h2 class="title">CRAETION</h2>
-        <h1 class="subtitle">Hip-hop/electronic music project</h1>
+        <h1 class="subtitle is-5" id="creation-text">Hip-hop/electronic music project</h1>
+        <h5 class="subtitle is-3" id="heaven-text-wrapper"> Latest Single <span class="hidden-mobile">-</span> <span id="heaven-text"> Heaven </spean> </h5>
+        <div class="iframe-container">
+        <iframe src="https://open.spotify.com/embed/track/62V1xbPGoyL2TLVj7BKEz4" id="heaven-link" width="300" height="40" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
         <p class="is-5"> 3+ million streams across all platforms </p>
-        <div id="spotify">
+        <div id="spotify" class="iframe-container">
         <iframe src="https://open.spotify.com/embed/artist/2YG5rP9nse6vNOtRmGtPFT" width="320" height="400" 
         frameborder="0" allowtransparency="true" allow="encrypted-media" id="spotify"></iframe>
         </div>
       </div>
-      <div class="column is-7 is-full-mobile">
+      <div class="column is-7 is-full-mobile"  id="euphoria-pic">
           <figure class="image is-5by3">
               <img src="media/craetion.jpg">
           </figure>
-          <p class="subtitle is-5 is-size-6-mobile" style="font-weight: 500; padding-top: 5px">
+          <p class="subtitle is-5 is-size-6-mobile" id="desc-text" style="font-weight: 500; padding-top: 5px">
           Performing live at Euphoria Music Festival 2017 in Austin, TX</p>
       </div>
     </div>
@@ -336,7 +373,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Created by by <a href="https://github.com/colinscruggs">Colin Scruggs</a>.
+        Created by <a href="https://github.com/colinscruggs">Colin Scruggs</a>.
       </p>
       <p>2019</p>
     </div>
