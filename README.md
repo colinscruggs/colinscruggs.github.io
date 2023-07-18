@@ -1,2 +1,2 @@
 # portfolio
-Personal website v3, started in 2019
+Personal website outlining my interests, skills, and music catalog. Created using Bulma CSS framework.
