@@ -82,18 +82,21 @@ body {
 
 #skillsTitle {
   background: -webkit-linear-gradient(#ff5e62, #89216b);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #projectsTitle {
   background: -webkit-linear-gradient(#b06ab3, #4568dc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #musicTitle {
   background: -webkit-linear-gradient(#38ef7d, #11998e);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -237,6 +240,7 @@ article {
 
 #single-text {
   background: -webkit-linear-gradient(#afe6e3, #a2d2a2);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -256,7 +260,12 @@ iframe {
 }
 
 #desc-text {
+  font-size: 16px;
   margin-bottom: 20px;
+}
+
+#small {
+  font-size: 14px;
 }
 
 /* Responsive mobile styling */
@@ -297,8 +306,7 @@ iframe {
   }
 
   #euphoria-pic {
-    padding: 30px;
-    margin-top: 15px;
+    padding: 0 30px;
   }
 
   .hidden-mobile {
@@ -313,5 +321,17 @@ iframe {
   #creation-text {
     font-size: 1em;
     font-weight: 500;
+  }
+
+  #music {
+    padding-bottom: 12px;
+  }
+
+  #spotify {
+    height: 160px;
+  }
+
+  .footer {
+    font-size: 16px;
   }
 }
