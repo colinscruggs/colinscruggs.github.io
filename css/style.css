@@ -11,26 +11,27 @@ body {
 }
 
 .title {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
+  color: #333 !important;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
   font-size: 4rem;
 }
 
 .title-2 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
   font-size: 3.75rem;
   padding: 0 0 10px 0;
 }
 
 .subtitle {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
 }
 
-.hero {
-  color: white;
+#page-title {
+  color: #333 !important;
 }
 
 #profile {
@@ -45,9 +46,23 @@ body {
   justify-content: center;
 }
 
+.navbar-end {
+  display: "flex";
+  gap: 0.25rem;
+}
+
 .navbar-item {
-  font-family: "Work Sans", sans-serif;
-  margin-top: 4px;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 0.25rem;
+  color: "#333 !important";
+  background-color: rgba(235, 235, 235, 0.4);
+  transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.navbar-item:hover {
+  background-color: rgb(216, 216, 216);
+  transition: 0.3s ease-in-out;
 }
 
 .navbar-burger {
@@ -60,24 +75,52 @@ body {
 
 .buttons {
   justify-content: center;
-  margin: 0 100px 0 100px;
+  margin: 0 2rem;
+}
+
+.hero-icon {
+  font-size: 1.5rem;
+}
+
+.icon {
+  font-size: 1rem;
+  margin-right: 0.2em !important;
+}
+
+.svg-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.4em;
+}
+
+.svg-icon-large {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.4em;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #about {
-  background: #11998e;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(#eed7c5, #fff);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(#eed7c5, #fff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #bio {
-  padding: 30px 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .level {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
+}
+
+.level-heading {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 #skillsTitle {
@@ -101,73 +144,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* scroll arrow animation by Matthew Hirsch
-	 https://codepen.io/matthewhirsch/pen/qOxmoz */
-.scroll-down {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  display: block;
-  text-align: center;
-  font-size: 20px;
-  z-index: 100;
-  text-decoration: none;
-  text-shadow: 0;
-  width: 13px;
-  height: 13px;
-  border-bottom: 2px solid #333;
-  border-right: 2px solid #333;
-  z-index: 9;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%) rotate(45deg);
-  -moz-transform: translate(-50%, 0%) rotate(45deg);
-  transform: translate(-50%, 0%) rotate(45deg);
-  -webkit-animation: fade_move_down 3s ease-in-out infinite;
-  -moz-animation: fade_move_down 3s ease-in-out infinite;
-  animation: fade_move_down 3s ease-in-out infinite;
-}
-
-/*animated scroll arrow animation*/
-@-webkit-keyframes fade_move_down {
-  0% {
-    -webkit-transform: translate(0, -10px) rotate(45deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translate(0, 5px) rotate(45deg);
-    opacity: 0;
-  }
-}
-@-moz-keyframes fade_move_down {
-  0% {
-    -moz-transform: translate(0, -10px) rotate(45deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: translate(0, 5px) rotate(45deg);
-    opacity: 0;
-  }
-}
-@keyframes fade_move_down {
-  0% {
-    transform: translate(0, -10px) rotate(45deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, 5px) rotate(45deg);
-    opacity: 0;
-  }
-}
-
 article {
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -185,7 +161,7 @@ article {
 }
 
 .message-header p {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
 }
@@ -196,7 +172,7 @@ article {
 
 .icon-left {
   position: relative;
-  right: 15px;
+  right: 1rem;
 }
 
 .navTop {
@@ -245,27 +221,95 @@ article {
   -webkit-text-fill-color: transparent;
 }
 
-iframe {
-  border-radius: 15px;
-}
-
-.iframe-container {
-  overflow: hidden;
-  height: 100px;
-}
-
 #euphoria-pic {
-  padding: 45px;
-  margin-top: 45px;
+  padding: 2rem;
+  margin-top: 7rem;
 }
 
 #desc-text {
   font-size: 16px;
+  font-weight: 400;
+  padding-top: 0.5rem;
   margin-bottom: 20px;
 }
 
 #small {
   font-size: 14px;
+}
+
+/* scroll arrow animation by Matthew Hirsch
+	 https://codepen.io/matthewhirsch/pen/qOxmoz */
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 3s ease-in-out infinite;
+  -moz-animation: fade_move_down 3s ease-in-out infinite;
+  animation: fade_move_down 3s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate(0, 5px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade_move_down {
+  0% {
+    -moz-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: translate(0, 5px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 5px) rotate(45deg);
+    opacity: 0;
+  }
 }
 
 /* Responsive mobile styling */
@@ -275,9 +319,8 @@ iframe {
     position: relative;
   }
 
-  .hero-title {
-    padding-bottom: 0px;
-    order: 0;
+  .title {
+    font-size: 3.5rem;
   }
 
   .is-active {
@@ -296,8 +339,16 @@ iframe {
     order: 99;
   }
 
+  .hero-icon {
+    font-size: 1.25rem;
+  }
+
   .buttons {
-    margin: 0 40px 0 40px;
+    margin: 0;
+  }
+
+  .navbar-item {
+    margin: 0.25rem 0.5rem;
   }
 
   .navScroll {
@@ -306,7 +357,8 @@ iframe {
   }
 
   #euphoria-pic {
-    padding: 0 30px;
+    padding: 0 2rem;
+    margin-top: 1rem;
   }
 
   .hidden-mobile {
@@ -325,10 +377,6 @@ iframe {
 
   #music {
     padding-bottom: 12px;
-  }
-
-  #spotify {
-    height: 160px;
   }
 
   .footer {
