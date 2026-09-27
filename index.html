@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +8,6 @@
   <!-- Bulma CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <!-- Google fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lexend+Deca:200,300,400,500" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +20,6 @@
   <link rel="manifest" href="/site.webmanifest">
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
   <!-- JavaScript imports-->
   <script src="https://kit.fontawesome.com/c310faf1e6.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,9 +29,9 @@
 <body>
   <!-- Hero landing -->
   <section class="hero is-fullheight is-white" id="about">
+
     <!-- Hero > Navbar-->
     <div class="hero-head" id="navbar">
-
       <header class="navbar is-fixed-top" style="max-height: 50px">
         <div class="container">
           <div class="navbar-brand logo">
@@ -48,7 +45,6 @@
               <span aria-hidden="true"></span>
             </span>
           </div>
-
           <!-- Navbar menu -->
           <div id="navbarMenuHeroC" class="navbar-menu">
             <div class="navbar-end">
@@ -83,14 +79,11 @@
 
       <!-- Title column-->
       <div class="columns is-centered">
-        <div class="column is-two-thirds-desktop is-full-mobile hero-title">
-          <h1 class="title has-text-justified-mobile hero-title">
+        <div class="column is-two-thirds-desktop is-full-mobile">
+          <h1 class="title has-text-justified-mobile">
             Colin Scruggs
           </h1>
-
-          <p class="subtitle is-size-4-tablet is-size-5-mobile" id="bio">
-            <!-- Hello! I'm a <strong>Senior Software Engineer</strong> with 7+ years of professional experience building SaaS &
-            enterprise web applications. -->
+          <p class="subtitle is-size-4-tablet is-size-5-mobile mb-8" id="bio">
             Hello! I'm a <strong>Senior Software Engineer</strong> with expertise in front-end development building SaaS
             products and enterprise web applications.
             <br>
@@ -101,11 +94,11 @@
             <br>
             My interests include UX design, data visualization, and music production.
           </p>
-          <nav class="level is-mobile">
+          <nav class="level is-mobile" style="margin-top: 3rem;">
             <div class="level-item has-text-centered">
               <div>
-                <p class="heading">Github</p>
-                <span class="icon has-text-grey-dark">
+                <p class="level-heading">Github</p>
+                <span class="hero-icon has-text-grey-dark">
                   <a href="https://github.com/colinscruggs" target="_blank">
                     <i class="fa-brands fa-github fa-lg"></i>
                   </a>
@@ -114,9 +107,8 @@
             </div>
             <div class="level-item has-text-centered">
               <div>
-
-                <p class="heading">LinkedIn</p>
-                <span class="icon has-text-link">
+                <p class="level-heading">LinkedIn</p>
+                <span class="hero-icon has-text-link">
                   <a href="https://www.linkedin.com/in/colin-scruggs-51576bbb/" target="_blank">
                     <i class="fa-brands fa-linkedin fa-lg"></i>
                   </a>
@@ -125,8 +117,8 @@
             </div>
             <div class="level-item has-text-centered">
               <div>
-                <p class="heading">Spotify</p>
-                <span class="icon has-text-success">
+                <p class="level-heading">Spotify</p>
+                <span class="hero-icon has-text-success">
                   <a href="https://open.spotify.com/artist/2YG5rP9nse6vNOtRmGtPFT" target="_blank">
                     <i class="fa-brands fa-spotify fa-lg"></i>
                   </a>
@@ -157,122 +149,225 @@
     <h1 class="title title-2 has-text-centered is-full" id="skillsTitle">skills //</h1>
 
     <div class="columns is-multiline">
-      <div class="column mb-4 is-three-fifths-desktop is-offset-one-fifth-desktop is-full-tablet is-full-mobile">
-        <h2 class="title is-size-2 has-text-centered ">Front-End & Software Development</h2>
+      <div class="column mb-3 is-half-desktop is-half-tablet is-full-mobile">
+        <h2 class="title is-size-2 has-text-centered ">Front-End Development</h2>
         <div class="buttons">
           <span class="button">
-            <span style="font-size: 16px; color: #f7df1e; margin-right: 0.4em; padding: 0.05rem">
+            <span class="icon" style="color: #00d8ff;">
+              <i class="fa-brands fa-react"></i>
+            </span>
+            React 19
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #42b883;">
+              <i class="fa-brands fa-vuejs"></i>
+            </span>
+            Vue.js
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #3178C6;">
+              <i class="fa-brands fa-typescript"></i>
+            </span>
+            TypeScript
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #f7df1e;">
               <i class="fa-brands fa-square-js"></i>
             </span>
             JavaScript (ES6+)
           </span>
           <span class="button">
-            <span style="font-size: 16px; color: #00d8ff; margin-right: 0.4em; padding: 0.05rem">
-              <i class="fa-brands fa-react"></i>
-            </span>
-            React 18
-          </span>
-          <span class="button">
-            <span style="font-size: 16px; color: #42b883; margin-right: 0.4em; padding: 0.05rem">
-              <i class="fa-brands fa-vuejs"></i>
-            </span>
-            Vue.js
-          </span>
-          <span class="button">TypeScript</span>
-          <span class="button">
-            <span style="font-size: 16px; color: #f06529; margin-right: 0.4em; padding: 0.05rem">
+            <span class="icon" style="color: #f06529;">
               <i class="fa-brands fa-html5"></i>
             </span>
             HTML5
           </span>
           <span class="button">
-            <span style="font-size: 16px; color: #2965f1; margin-right: 0.4em; padding: 0.05rem">
+            <span class="icon" style="color: #2965f1;">
               <i class="fa-brands fa-css3-alt"></i>
             </span>
             CSS3
           </span>
-          <span class="button">Material UI</span>
-          <span class="button">Redux</span>
-          <span class="button">Jest</span>
           <span class="button">
-            <span style="font-size: 16px; color: #498aff; margin-right: 0.4em; padding: 0.05rem">
-              <i class="fa-solid fa-mobile-screen"></i>
+            <span class="icon" style="color: #cc6699;">
+              <i class="fa-brands fa-sass"></i>
             </span>
-            Ionic
+            SCSS
           </span>
           <span class="button">
-            <span style="font-size: 16px; color: #ff9852; margin-right: 0.4em; padding: 0.05rem">
+            <img src="./media/icons/mui.svg" class="svg-icon" />
+            Material UI (MUI)
+          </span>
+          <span class="button">
+            <img src="./media/icons/vuetify.svg" class="svg-icon" />
+            Vuetify
+          </span>
+          <span class="button">
+            <img src="./media/icons/react-router.svg" class="svg-icon" />
+            React Router
+          </span>
+          <span class="button">
+            <img src="./media/icons/redux.svg" class="svg-icon" />
+            Redux
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #498aff;">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </span>
+            Ionic Framework
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #ff9852;">
               <i class="fa-solid fa-chart-column"></i>
             </span>
             D3.js
           </span>
           <span class="button">
-            <span style="font-size: 16px; color: #333; margin-right: 0.4em; padding: 0.05rem">
+            <img src="./media/icons/jest.svg" class="svg-icon" />
+            Jest
+          </span>   
+          <span class="button">
+            <span class="icon" style="color: #333;">
               <i class="fa-brands fa-npm"></i>
             </span>
             npm
           </span>
           <span class="button">
-            <span style="font-size: 16px; color: #333; margin-right: 0.4em; padding: 0.05rem">
-              <i class="fa-solid fa-code-branch"></i>
-            </span>
-            Git
-          </span>
-          <span class="button">RESTful APIs</span>
+            <img src="./media/icons/vite.svg" class="svg-icon" />
+            Vite
+          </span> 
+        </div>
+      </div>
+      <div class="column mb-3 is-half-desktop is-half-tablet is-full-mobile">
+        <h2 class="title is-size-2 has-text-centered ">Back-End Development & Tooling</h2>
+        <div class="buttons">
           <span class="button">
-            <span style="font-size: 16px; color: #84ba64; margin-right: 0.4em; padding: 0.05rem">
+            <span class="icon" style="color: #777;">
+              <i class="fa-solid fa-server"></i>
+            </span>
+            Restful APIs
+          </span>
+          <span class="button">
+            <img src="./media/icons/csharp.svg" class="svg-icon-large" />
+            C#
+          </span>
+          <span class="button">
+            <img src="./media/icons/dotnet.svg" class="svg-icon" />
+            ASP.NET Core
+          </span>
+          <span class="button">
+            Entity Framework Core
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #3d5061;">
+              <i class="fa-solid fa-database"></i>
+            </span>
+            SQLServer
+          </span>
+          <span class="button">
+            <img src="./media/icons/postgresql.svg" class="svg-icon" />
+            PostgreSQL
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #84ba64;">
               <i class="fa-brands fa-node-js"></i>
             </span>
             Node.js
           </span>
-          <span class="button">Express</span>
           <span class="button">
-            <span style="font-size: 16px; color: #336791; margin-right: 0.4em; padding: 0.05rem">
-              <i class="fa-solid fa-database"></i>
-            </span>
-            PostgreSQL
+            <img src="./media/icons/expressjs.svg" class="svg-icon" />
+            Express
           </span>
-          <span class="button">Next.js</span>
           <span class="button">
-            <span style="font-size: 16px; color: #4584b6; margin-right: 0.4em; padding: 0.05rem">
+            <span class="icon" style="color: #4584b6;">
               <i class="fa-brands fa-python"></i>
             </span>
             Django
           </span>
+          <span class="button">
+            <img src="./media/icons/postman.svg" class="svg-icon" />
+            Postman
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #333;">
+              <i class="fa-solid fa-code-branch"></i>
+            </span>
+            Git
+          </span>
+          <span class="button">
+            <img src="./media/icons/azure-devops.svg" class="svg-icon" />
+            Azure DevOps
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #6a5678;">
+              <i class="fa-solid fa-chart-diagram"></i>
+            </span>
+            CI/CD Pipelines
+          </span>
+          <span class="button">
+            <img src="./media/icons/docker.svg" class="svg-icon" />
+            Docker
+          </span>
         </div>
       </div>
-      <div class="column mb-4 is-half-desktop is-half-tablet is-full-mobile">
-        <h2 class="title is-size-2 has-text-centered ">Computer Aided Design </h2>
+      <div class="column mb-3 is-half-desktop is-half-tablet is-full-mobile">
+        <h2 class="title is-size-2 has-text-centered ">Visual & Interface Design</h2>
         <div class="buttons">
           <span class="button">
-            <span style="font-size: 16px; color: #ffd000; margin-right: 0.4em; padding: 0.05rem">
+            <span class="icon" style="color: #ac54fc;">
+              <i class="fa-brands fa-figma"></i>
+            </span>
+            Figma
+          </span>
+          <span class="button">
+            <span class="icon" style="color: #ffd000;">
               <i class="fa-brands fa-sketch"></i>
             </span>
             Sketch
           </span>
           <span class="button">
-            <span style="font-size: 16px; color: #ac54fc; margin-right: 0.4em; padding: 0.05rem">
-              <i class="fa-brands fa-figma"></i>
-            </span>
-            Figma
+            <img src="./media/icons/affinity.svg" class="svg-icon" />
+            Affinity
+          </span>          
+          <span class="button">
+            <img src="./media/icons/photoshop.svg" class="svg-icon" />
+            Adobe Photoshop
           </span>
-          <span class="button">Adobe Photoshop</span>
-          <span class="button">Adobe Illustrator</span>
-          <span class="button">Tableau</span>
+          <span class="button">
+            <img src="./media/icons/illustrator.svg" class="svg-icon" />
+            Adobe Illustrator
+          </span>
+          <span class="button">
+            <img src="./media/icons/tableau.svg" class="svg-icon" />
+            Tableau
+          </span>
         </div>
       </div>
-      <div class="column mb-4 is-half-desktop is-half-tablet is-full-mobile">
-        <h2 class="title is-size-2 has-text-centered "> Audio and Video Production </h2>
+      <div class="column mb-3 is-half-desktop is-half-tablet is-full-mobile">
+        <h2 class="title is-size-2 has-text-centered ">Audio & Video Production </h2>
         <div class="buttons">
           <span class="button">
-            <span style="font-size: 16px; color: #ff7700; margin-right: 0.4em; padding: 0.05rem">
+            <span class="icon" style="color: #ff7700;">
               <i class="fa-solid fa-pepper-hot"></i>
             </span>
-            FL Studio 21
+            FL Studio 25
           </span>
-          <span class="button">iZotope Ozone 10</span>
-          <span class="button">Logic Pro X</span>
-          <span class="button">Sony Vegas Pro 12</span>
+          <span class="button">
+            <img src="./media/icons/izotope.svg" class="svg-icon" />
+            iZotope Ozone
+          </span>
+          <span class="button">
+            <img src="./media/icons/logic.png" class="svg-icon-large" />
+            Logic Pro X
+          </span>
+          <span class="button">
+            <img src="./media/icons/rekordbox.png" class="svg-icon" />
+            Rekordbox
+          </span>
+          <span class="button">
+            <img src="./media/icons/sony-vegas.svg" class="svg-icon" />
+            Sony Vegas Pro
+          </span>
         </div>
       </div>
     </div>
@@ -459,32 +554,30 @@
     <div class="columns has-text-centered">
       <div class="column is-5 is-full-mobile">
         <h2 class="title">CRAETION</h2>
-        <h1 class="subtitle is-5" id="creation-text">Hip-hop/electronic music project</h1>
+        <h1 class="subtitle is-4 mb-1" id="creation-text">Hip-hop/electronic music project</h1>
+        <a href="https://lnk.bio/craetion" target="_blank">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+          <p class="is-6 mb-3">8+ million streams across all platforms</p>
+          <i class="fa-solid fa-link pb-2"></i>
+        </div>
+        </a>
+
+
         <h5 class="subtitle is-3" id="single-text-wrapper"> Latest Single <span class="hidden-mobile">-</span> <span
-            id="single-text" class="hidden-mobile"> Wandering </spean>
+            id="single-text" class="hidden-mobile"> Wandering / Paths </span>
         </h5>
-        <div class="iframe-container">
-          <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/track/2YFfbl55HEVGT0Q3COlmT2?utm_source=generator" width="375"
-            height="150" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-          </iframe>
-        </div>
-        <p class="is-5 pb-3">6+ million streams across all platforms </p>
-        <div id="spotify" class="iframe-container">
-          <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/artist/2YG5rP9nse6vNOtRmGtPFT?utm_source=generator" width="375"
-            height="300" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-          </iframe>
-        </div>
+
+          <iframe data-testid="embed-iframe" id="single" style="border-radius:12px;" src="https://open.spotify.com/embed/album/1apKgMx5uTJWTXgAWpN817?utm_source=generator&si=84e3772e35ae4e03"
+          width="90%" height="90" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/2YG5rP9nse6vNOtRmGtPFT?utm_source=generator&theme=0&si=661afa726a7d4c5c"
+          width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
       <div class="column is-7 is-full-mobile" id="euphoria-pic">
         <figure class="image is-5by3">
-          <img src="media/craetion.jpg">
+          <img src="media/craetion.jpg" style="border-radius: 12px;">
         </figure>
-        <p class="subtitle is-5 is-size-6-mobile" id="desc-text" style="font-weight: 400; padding-top: 5px">
-          Performing live at Euphoria Music Festival 2017 in Austin, TX
+        <p class="subtitle is-5 is-size-6-mobile" id="desc-text">
+          Performing live at Euphoria Music Festival in Austin, TX
         </p>
       </div>
     </div>
@@ -498,5 +591,4 @@
   </footer>
 
 </body>
-
 </html>
